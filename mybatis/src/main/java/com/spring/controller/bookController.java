@@ -17,6 +17,7 @@ public class bookController {
 	@RequestMapping("/getAll")
 	public List<book> getAll() {
 		List<book> list = mapper.fingAllBooks();
+		System.out.println("hello world");
 		if (list==null) {
 			throw new NullPointerException("数组为空！");
 		}
